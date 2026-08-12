@@ -1,0 +1,61 @@
+## Build output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Ll]og/
+[Ll]ogs/
+artifacts/
+
+## Generated protobuf / gRPC code
+# Grpc.Tools regenerates these from Protos/product.proto on every build.
+# The .proto file IS committed; its generated *.cs are not.
+**/Generated/
+*.pb.cs
+*Grpc.cs
+
+## Visual Studio / VS Code / Rider
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.DotSettings.user
+
+## Local secrets and machine-specific config
+# Keep appsettings.json committed; keep local overrides out.
+appsettings.*.local.json
+appsettings.Local.json
+secrets.json
+*.pfx
+*.snk
+
+## NuGet
+*.nupkg
+*.snupkg
+packages/
+
+## SQL Server / LocalDB data files
+*.mdf
+*.ldf
+*.ndf
+
+## Test results & coverage
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+coverage*.json
+coverage*.xml
+TestResults/
+
+## OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+## Misc
+*.tmp
+*.cache
+*.bak
